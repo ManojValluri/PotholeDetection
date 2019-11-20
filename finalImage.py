@@ -19,10 +19,10 @@ img = Image.new( im.mode, im.size)
 pixelsNew = img.load()
 for i in range(img.size[0]):
    for j in range(img.size[1]):
-       if (31,31,31) == pixelMap[i,j] :
-           pixelMap[i,j] = (229,229,229);
+       if (0,0,0) == pixelMap[i,j] :
+           pixelMap[i,j] = (255,255,255);
        else:
-           pixelMap[i,j] = (31,31,31);
+           pixelMap[i,j] = (0,0,0);
 im.show()
 
 im.save("/Users/Manoj_Valluri/Desktop/AI Project/testk.png")
@@ -40,7 +40,7 @@ img = Image.new( im.mode, im.size)
 pixelsNew = img.load()
 for i in range(img.size[0]):
    for j in range(img.size[1]):
-       if (31,31,31) == pixelMap[i,j]:
+       if (0,0,0) == pixelMap[i,j]:
            continue
        pixelMap2[i,j] = (255,0,0)
 
